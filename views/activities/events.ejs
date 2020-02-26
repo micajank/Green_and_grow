@@ -1,0 +1,17 @@
+<h1>Events</h1>
+
+<form action="/events" method="GET">
+    <label for="location_search">Type in the name of your city:</label>
+    <input type="text" name="location" id="location">
+
+    <input type="submit" value="Search">
+</form>
+
+
+<% events.forEach(function(event) { %>
+    <div class="event">
+        <h3>
+            <%= event.title %>
+        </h3>
+    </div>
+<% }) %>

@@ -56,7 +56,9 @@ app.get('/profile', isLoggedIn, function(req, res) {
 });
 
 app.use('/auth', require('./controllers/auth'));
-app.use("/", isLoggedIn, require("./controllers/test"));
+app.use('/events', require('./controllers/events'));
+// app.use("/", isLoggedIn, require("./controllers/test"));
+// app.use('/restaurants', require('./controllers/restaurants'));
 
 var server = app.listen(process.env.PORT || 3000);
 
