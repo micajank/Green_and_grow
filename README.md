@@ -1,25 +1,22 @@
-# Express Authentication
+# Green & Grow
+### Description:
+This application was inpired by my mother who has spent much of her free time researching and learning about how to make her life more sustainable and less wasteful. She has shared how difficult it is to find ways to improve her lifestyle without a platform that can assist in her research. Green & Grow is meant to bring the vast world of sustainable living information to one space. Someone can go to the site to simply learn more about the vocabulary and common practices of living greener, or go further to discover educational talks and events through the eventful api built into the app. If someone finds an event that interests them, they can like and follow the event, which will be saved to their profile. They can also plan a day by choosing an event and then being directed to choose a restaurant nearby that adheres to organic practices, uses local ingredients, or is farm-to-table. There is a section for further reading with additional resources to help with tips and tricks for a greener life, suggestions of local organizations that need volunteers, and community gardens that are accepting new members.
 
-Express authentication template using Passport + flash messages + custom middleware
+### Tools:
+Green & Grow is built with HTML5, CSS, Javascript, Node.js, and RESTful routing practices
+#### APIs:
+- Eventful
+- Zomato
+- Google Maps
 
-## Getting Started
+### Future Goals for Green & Grow
+- I would like to add a calendar feature to the app that would automatically fill "liked" and "planned" events and restaurants in order to follow them easier. 
+- I would also like to add the ability to purchase tickets directly from my site rather than sending the user to the event somewhere else to pay.
+- I think this app could benefit from a social network aspect, where people could connect and become "friends" and plan events together as a group.
+- Finally, I would like to add more features to really round out the app, making it the best place to find information about sustainability. Add a few more APIs to news outlets with running articles on whats new in green living. Incorporate a simulator for users to measure their greenhouse impact on the planet. And add a meetup component to help unite people and strangers outside of the app to encourage long term changes.
 
-#### Scaffold w/tests (see `master` branch)
+### Wireframes:
+![Wireframes of webapp](./public/img/wireframe1.jpg)
+![Wireframes of webapp](./public/img/wireframe2.jpg)
+![Wireframes of webapp](./public/img/user_story.jpg "User Story")
 
-* Run `npm install` to install dependencies
-* Use `npm test` to run tests
-* Setup the databases
-  * Change the database names in `config/config.json` to reflect your project
-  * Run `createdb project_name_development` to create the development database
-  * Run `createdb project_name_test` to create the test database
-
-#### Finished version (see `brian-finished` branch)
-
-* Run `npm install` to install dependencies
-  * Use `npm run lint:js` to lint your JS
-  * Use `npm run lint:css` to lint your CSS
-  * Use `npm test` to run tests
-* Setup the databases
-  * Run `createdb express_auth_development` to create the development database
-  * Run `createdb express_auth_test` to create the test database
-  * Run `sequelize db:migrate` to run migrations
