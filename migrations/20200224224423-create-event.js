@@ -14,14 +14,17 @@ module.exports = {
       location: {
         type: Sequelize.STRING
       },
+      state: {
+        type: Sequelize.STRING
+      },
       date: {
         type: Sequelize.STRING
       },
       time: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       eventbriteId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,

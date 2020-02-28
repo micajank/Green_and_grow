@@ -1,0 +1,16 @@
+<h1>Restaurant options to go with your event!</h1>
+
+
+<% restaurants.forEach(function(restaurant) { %>
+    <div class="restaurant">
+        <h3>
+            <%= restaurant.name %>
+        </h3>
+        <h4> Location:
+            <%= restaurant.location.address %>
+        </h4>
+        <a href="/events/<%= restaurant.id %>">
+            Click for details!
+        </a>
+    </div>
+<% }) %>

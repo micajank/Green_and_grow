@@ -3,9 +3,10 @@ module.exports = (sequelize, DataTypes) => {
   const event = sequelize.define('event', {
     title: DataTypes.STRING,
     location: DataTypes.STRING,
+    state: DataTypes.STRING,
     date: DataTypes.STRING,
-    time: DataTypes.INTEGER,
-    eventbriteId: DataTypes.INTEGER
+    time: DataTypes.STRING,
+    eventbriteId: DataTypes.STRING
   }, {});
   event.associate = function(models) {
     // associations can be defined here

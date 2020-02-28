@@ -57,6 +57,7 @@ app.get('/profile', isLoggedIn, function(req, res) {
 
 app.use('/auth', require('./controllers/auth'));
 app.use('/events', require('./controllers/events'));
+app.use('/profile', require('./controllers/profile'));
 // app.use("/", isLoggedIn, require("./controllers/test"));
 // app.use('/restaurants', require('./controllers/restaurants'));
 

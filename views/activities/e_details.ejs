@@ -1,0 +1,32 @@
+<div class="event">
+    <h3>
+        <%= event.title %>
+    </h3>
+    <h4> Date & Start Time:
+        <%= event.start_time %>
+    </h4>
+    <p> Description:
+        <%= event.description %>
+    </p>
+    
+    <form action="/profile" method="POST">
+        <input type="hidden" name="eventTitle" value="<%= event.title %>"> 
+        <input type="hidden" name="eventLocation" value="<%= event.city %>"> 
+        <input type="hidden" name="eventState" value="<%= event.region %>"> 
+        <input type="hidden" name="eventDate" value="<%= event.start_time %>"> 
+        <input type="hidden" name="eventTime" value="<%= event.start_time %>"> 
+        <input type="hidden" name="eventId" value="<%= event.id %>"> 
+        <input type="submit" value="Follow">
+    </form>
+
+    <form action="/profile/plan/event" method="GET"> 
+        <input type="hidden" name="eventLocation" value="<%= event.city %>"> 
+        <input type="hidden" name="eventState" value="<%= event.region %>">  
+        <input type="hidden" name="eventId" value="<%= event.id %>"> 
+        <input type="submit" value="Add To Plan">
+    </form>
+
+   
+
+</div>
+

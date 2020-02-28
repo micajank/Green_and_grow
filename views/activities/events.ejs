@@ -13,5 +13,14 @@
         <h3>
             <%= event.title %>
         </h3>
+        <h4> Date & Start Time:
+            <%= event.start_time %>
+        </h4>
+        <p> Description:
+            <%= event.description %>
+        </p>
+        <a href="/events/<%= event.id %>">
+            Click for details!
+        </a>
     </div>
 <% }) %>
