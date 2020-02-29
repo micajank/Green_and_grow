@@ -9,9 +9,11 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       eventId: {
+        allowNull: true,
         type: Sequelize.INTEGER
       },
       restaurantId: {
+        allowNull: true,
         type: Sequelize.INTEGER
       },
       date: {

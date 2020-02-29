@@ -4,13 +4,16 @@
 <% restaurants.forEach(function(restaurant) { %>
     <div class="restaurant">
         <h3>
-            <%= restaurant.name %>
+            <%= restaurant.restaurant.name %>
         </h3>
         <h4> Location:
-            <%= restaurant.location.address %>
+            <%= restaurant.restaurant.location.address %>
         </h4>
-        <a href="/events/<%= restaurant.id %>">
-            Click for details!
-        </a>
+        <form action="/profile/plan/update" method="POST">  
+
+            <input type="hidden" name="planId" value="<%= plan_id %>"> 
+            <input type="hidden" name="restaurantId" value="<%= restaurant.restaurant.id %>"> 
+            <input type="submit" value="Add To Plan">
+        </form>
     </div>
 <% }) %>

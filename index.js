@@ -51,13 +51,10 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
-app.get('/profile', isLoggedIn, function(req, res) {
-  res.render('profile');
-});
-
 app.use('/auth', require('./controllers/auth'));
 app.use('/events', require('./controllers/events'));
 app.use('/profile', require('./controllers/profile'));
+app.use('/restaurants', require('./controllers/restaurants'));
 // app.use("/", isLoggedIn, require("./controllers/test"));
 // app.use('/restaurants', require('./controllers/restaurants'));
 

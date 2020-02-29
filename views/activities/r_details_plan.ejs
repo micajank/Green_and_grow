@@ -1,0 +1,19 @@
+<div class="restaurant">
+    <h3>
+        <%= restaurant.name %>
+    </h3>
+
+    <p> Location:
+        <%= restaurant.location.address %>
+    </p>
+
+    
+<!-- not sure about action and method. need to send to both Plan table and pass info to zomato api for searching restaurantss -->
+    <form action="/profile/plan" method="POST">  
+        <input type="hidden" name="restaurantId" value="<%= restaurant.id %>"> 
+        <input type="submit" value="Add To Plan">
+    </form>
+
+   
+
+</div>
