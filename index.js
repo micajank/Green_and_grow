@@ -48,7 +48,7 @@ app.use(function(req, res, next) {
 
 app.get('/', function(req, res) {
   console.log(`User is ${ req.user ? req.user.name : 'not logged in'}`)
-  res.render('home');
+  res.render('states/home');
 });
 
 // app.get('/profile', isLoggedIn, function(req, res) {
