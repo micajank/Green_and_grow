@@ -182,6 +182,13 @@ footer {
     
 }
 
+#icon {
+    width: 80px;
+    height: 80px;
+    display: relative;
+    float: left;
+}
+
 .span {
     color: purple;
 }

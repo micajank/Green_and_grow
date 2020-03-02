@@ -1,6 +1,8 @@
 <% restaurants.forEach(function(restaurant) { %>
+    
     <div class="restaurant">
-       
+        
+        <img calss="thumb" id="icon" src="<%= restaurant.restaurant.thumb %>">
         <h3>
             <%= restaurant.restaurant.name %>
         </h3>
