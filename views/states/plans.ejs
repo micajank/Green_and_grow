@@ -1,0 +1,12 @@
+
+<div class="plan">
+    Your Events:
+    <% plans.forEach(function(plan) { %>
+        <div class="event">
+            <h3>
+                On <span class="span"><%= plan.event.date %></span>, you have planned to attend the <span class="span"><%= plan.event.title %></span> Event and eat at <span class="span"><%= plan.restaurant.name %></span>!
+                
+            </h3>
+        </div>
+    <% }) %>
+</div>

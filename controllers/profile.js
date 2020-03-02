@@ -15,10 +15,28 @@ router.get("/", isLoggedIn, (req, res) => {
             where: { userId: req.user.id }
         })
         .then(function(eventData) {
-            res.render("states/profile", { user: req.user, plans: planData, events: eventData });
+            db.restaurant.findAll({
+                where: { userId: req.user.id }
+            })
+            .then(function(restData) {
+                
+                res.render("states/profile", { user: req.user, plans: planData, events: eventData, restaurants: restData });
+            })
         })
+
     })
 });
+
+router.get("/plans", isLoggedIn, (req, res) => {
+    db.plan.findAll({
+        where: { userId: req.user.id },
+        include: [db.event, db.restaurant]
+    })
+    .then(function(pData) {
+        
+        res.render("states/plans", { plans: pData});
+    })
+})
 
 // Adds an event to list of followed events on profile
 router.post("/", isLoggedIn, (req, res) => {
@@ -150,7 +168,7 @@ router.post("/plan/update", isLoggedIn, (req, res) => {
         })
         .then(([restaurant, created]) => {
             db.plan.update({
-                restaurantId: req.body.restaurantId
+                restaurantId: restaurant.id
                 }, {
                     where: {
                     id: req.body.planId

@@ -1,21 +1,35 @@
-<h1>User:
-    <%= user.name %>
-    Plan:
-    <% plans.forEach(function(plan) { %>
-        <div class="restaurant">
-            <h3>
-                <%= plan.id %>
-            </h3>
-        </div>
-    <% }) %>
-
-    <%= plans.id %>
-    Events:
-    <% events.forEach(function(event) { %>
-        <div class="restaurant">
-            <h3>
-                <%= event.title %>
-            </h3>
-        </div>
-    <% }) %>
+<h1>Hello 
+    <%= user.name %>!
+    <br>
+    <br>
+    <div class="plan">
+        Your Plans:
+        <a href="/profile/plans">
+            Click for details!
+        </a>    
+    </div>
+    <div class="plan">
+        Your Events:
+        <% events.forEach(function(event) { %>
+            <div class="event">
+                <h3>
+                    <%= event.title %>
+                    <%= event.location %>
+                    <%= event.date %>
+                    
+                </h3>
+            </div>
+        <% }) %>
+    </div>
+    <div class="plan">
+        Your Restaurants:
+        <% restaurants.forEach(function(restaurant) { %>
+            <div class="restaurant">
+                <h3>
+                    <%= restaurant.name %> @
+                    <%= restaurant.location %>
+                </h3>
+            </div>
+        <% }) %>
+    </div>
 </h1>

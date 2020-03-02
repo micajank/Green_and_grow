@@ -7,10 +7,9 @@ Green & Grow is built with HTML5, CSS, Javascript, Node.js, and RESTful routing 
 #### APIs:
 - Eventful
 - Zomato
-- Google Maps
 
 ### Future Goals for Green & Grow
-- I would like to add a calendar feature to the app that would automatically fill "liked" and "planned" events and restaurants in order to follow them easier. 
+- I would like to add a calendar feature to the app that would automatically fill "liked" and "planned" events and restaurants in order to follow them easier. I was also hoping to add a map feature to help in the plan decisions with engouragment to take public or no fuel transit but I ran out of time. I plan to add this in at a later date.
 - I would also like to add the ability to purchase tickets directly from my site rather than sending the user to the event somewhere else to pay.
 - I think this app could benefit from a social network aspect, where people could connect and become "friends" and plan events together as a group.
 - Finally, I would like to add more features to really round out the app, making it the best place to find information about sustainability. Add a few more APIs to news outlets with running articles on whats new in green living. Incorporate a simulator for users to measure their greenhouse impact on the planet. And add a meetup component to help unite people and strangers outside of the app to encourage long term changes.

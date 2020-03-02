@@ -182,6 +182,15 @@ footer {
     
 }
 
+.span {
+    color: purple;
+}
+
+.form-group {
+    display: inline-block;
+    padding: 30px 30px 30px 30px;
+}
+
 .details {
     text-align: right;
 }
