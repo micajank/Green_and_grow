@@ -6,8 +6,12 @@
         <h4> Location:
             <%= restaurant.restaurant.location.address %>
         </h4>
-        <a href="/restaurants/<%= restaurant.id %>">
+        <!-- <a href="/restaurants/<%= restaurant.restaurant.id %>">
             Click for details!
-        </a>
+        </a> -->
+        <form action="/restaurants/<%= restaurant.restaurant.id %>" method="POST">  
+            <input type="hidden" name="id" value="<%= restaurant.restaurant.id %>"> 
+            <input type="submit" value="click for details">
+        </form>
     </div>
 <% }) %>

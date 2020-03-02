@@ -1,1 +1,21 @@
-<%= req.user.id%>
+<h1>User:
+    <%= user.name %>
+    Plan:
+    <% plans.forEach(function(plan) { %>
+        <div class="restaurant">
+            <h3>
+                <%= plan.id %>
+            </h3>
+        </div>
+    <% }) %>
+
+    <%= plans.id %>
+    Events:
+    <% events.forEach(function(event) { %>
+        <div class="restaurant">
+            <h3>
+                <%= event.title %>
+            </h3>
+        </div>
+    <% }) %>
+</h1>

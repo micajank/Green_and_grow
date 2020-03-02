@@ -1,0 +1,28 @@
+<img calss="thumb" src="<%= restaurant.thumb %>">
+<div class="r">
+    <h1>
+        <%= restaurant.name %>
+    </h1>
+    <form class="r" action="/profile/follow" method="POST"> 
+        <input type="hidden" name="restaurantName" value="<%= restaurant.name %>"> 
+        <input type="hidden" name="restaurantLocation" value="<%= restaurant.location.address %>"> 
+        <input type="hidden" name="restaurantId" value="<%= restaurant.id %>"> 
+        <input type="submit" value="Follow">
+    </form>
+</div>
+
+<div class="r">
+    <h3>
+        <%= restaurant.location.address %>
+    </h3>
+</div>
+
+<div class="r">
+    <h3>
+        <img src="<%= restaurant.photos[0].photo.url %>">
+        <img src="<%= restaurant.photos[1].photo.url %>">
+    </h3>
+</div>
+
+
+

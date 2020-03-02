@@ -12,6 +12,8 @@
         <form action="/profile/plan/update" method="POST">  
 
             <input type="hidden" name="planId" value="<%= plan_id %>"> 
+            <input type="hidden" name="restaurantName" value ="<%= restaurant.restaurant.name %>">
+            <input type="hidden" name="restaurantLocation" value="<%= restaurant.restaurant.location.address %>">
             <input type="hidden" name="restaurantId" value="<%= restaurant.restaurant.id %>"> 
             <input type="submit" value="Add To Plan">
         </form>

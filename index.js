@@ -48,13 +48,20 @@ app.use(function(req, res, next) {
 
 app.get('/', function(req, res) {
   console.log(`User is ${ req.user ? req.user.name : 'not logged in'}`)
-  res.render('index');
+  res.render('home');
 });
 
+// app.get('/profile', isLoggedIn, function(req, res) {
+//   res.render('profile');
+// });
+app.use('/home', require('./controllers/home'));
+app.use('/learn', require('./controllers/learn'));
+app.use('/more', require('./controllers/more'));
 app.use('/auth', require('./controllers/auth'));
 app.use('/events', require('./controllers/events'));
-app.use('/profile', require('./controllers/profile'));
+app.use('/profile', isLoggedIn, require('./controllers/profile'));
 app.use('/restaurants', require('./controllers/restaurants'));
+
 // app.use("/", isLoggedIn, require("./controllers/test"));
 // app.use('/restaurants', require('./controllers/restaurants'));
 

@@ -1,3 +1,9 @@
+* {
+    margin: 0 auto;
+    font-family: 'Caladea';
+    
+}
+
 .alert {
     border-radius: 10px;
     box-shadow: .1em .1em hotpink;
@@ -11,3 +17,183 @@
 .green {
     background-color: green;
 }
+
+.text {
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(rgba(30, 0, 30, .9), rgba(0, 0, 0, 0.5));
+}
+
+.event, .restaurant {
+    background-color: rgba(0, 0, 0, .2);
+    width: 700px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(189, 180, 197);
+}
+
+.event h3, .restaurant h3 {
+    font-size: 30px;
+    color: rgb(189, 180, 197);
+
+}
+
+div {
+    text-align: center;
+    
+}
+
+#container {
+    width: 1450px;
+    background-image: linear-gradient(rgba(30, 0, 30, .9), rgba(0, 0, 0, 0.5));
+}
+
+.row {
+    display: flex;
+    align-content: center;
+}
+
+.head {
+     width: 300px;
+}
+
+#bannerImg {
+    height: 400px;
+    width: 1450px;
+    border: 1px solid black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("http://www.simpleimageresizer.com/_uploads/photos/2686a29e/wild-s2_1500x450.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+.text {
+    color: white;
+    text-align: center;
+    
+}
+
+#menu {
+    font-size: 20px;
+    align-items: center;
+    padding: 10px;
+    /* background-color: rgba(0, 0, 0, .2); */
+}
+
+.nav {
+    padding: 30px 30px 30px 30px;
+}
+
+#title {
+    font-size: 70px;
+    padding: 200px 0 0 0;
+}
+
+.blankRow {
+    height: 40px;
+}
+
+.largeBox {
+    width: 1000px;
+    border: 1px solid black;
+    padding: 30px 30px 30px 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.unsplash.com/photo-1562427718-bc71583acd76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80");
+    background-size: 100%;
+}
+
+.largeBox h2, p {
+    text-align: left;
+    color: white;
+}
+
+.smallBox {
+    color: white;
+    height: 200px;
+    border: 1px solid black;
+    padding: 30px 30px 30px 30px;
+    width:250px;
+    
+}
+
+#one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.unsplash.com/photo-1527149097206-f3a57e6ec0f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80");
+
+}
+#two {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://c4.wallpaperflare.com/wallpaper/294/852/1006/nature-closeup-plants-leaves-wallpaper-preview.jpg");
+
+
+}
+#three {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.unsplash.com/photo-1530049478161-0780526964f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80");
+
+}
+
+
+
+.smallBox h2, li {
+    text-align: left;
+}
+
+.learn, .more {
+    width: 700px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, .2);
+    color: white;
+}
+
+.learn h1, .learn h2, .more h1, .more h2 {
+    color: rgb(114, 139, 96);
+}
+
+.thumb {
+    margin: 40px 20px 20px 20px;
+}
+.r {
+    text-align: center;
+    height: 70px;
+    margin: 20px 20px 20px 20px;
+}
+
+.r img {
+    width: 300px;
+    height: 300px;
+    padding: 0px 20px 20px 20px;
+}
+
+.r h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+footer {
+    background: linear-gradient(rgba(101, 76, 117, 0.9), rgba(0, 0, 0, 0.2));
+    font-family: 'Caladea';
+    color: white;
+    padding: 20px 20px 20px 20px;
+    position: absolute;
+    margin-bottom: 0px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.details {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(152, 81, 224);
+}
+a:hover {
+    color: rgb(255, 255, 255);
+  }
+
+@media screen and (max-width: 1000px) {
+    
+ }

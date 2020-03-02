@@ -1,6 +1,7 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const plan = sequelize.define('plan', {
+    userId: DataTypes.INTEGER,
     eventId: DataTypes.INTEGER,
     restaurantId: DataTypes.INTEGER,
     date: DataTypes.STRING
@@ -9,9 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     // associations can be defined here
     models.plan.belongsTo(models.event);
     models.plan.belongsTo(models.restaurant);
-    models.plan.belongsToMany(models.user, {
-      through: "user_plan"
-    });
+    models.plan.belongsTo(models.user);
   };
   return plan;
 };
