@@ -1,10 +1,10 @@
 <div class="plan">
 
-    <h1>Events</h1>
+    <h1 class="e-title">Events</h1>
     
     <form action="/events" method="GET">
-        <label for="location_search">Type in the name of your city:</label>
-        <input type="text" name="location" id="location">
+        <label class="city-label" for="location_search">Type in the name of your city:</label>
+        <input class="city-search" type="text" name="location" id="location">
     
         <input type="submit" value="Search">
     </form>
@@ -22,7 +22,7 @@
         <p> Description:
             <%= event.description %>
         </p>
-        <a href="/events/<%= event.id %>">
+        <a class="click-for-details" href="/events/<%= event.id %>">
             Click for details!
         </a>
     </div>

@@ -61,6 +61,7 @@ router.post("/:id", (req, res) => {
         .then(function (respp) {
             console.log(respp.data);
             var result = respp.data;
+            console.log(result);
             res.render("activities/r_details", { restaurant: result });
         })
         .catch(function (err) {

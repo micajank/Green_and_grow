@@ -23,7 +23,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(30, 0, 30, .9), rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(rgba(55, 97, 55, 0.6), rgba(27, 92, 36, 0.5));
 }
 
 .event, .restaurant {
@@ -48,7 +48,11 @@ div {
 
 #container {
     width: 1450px;
-    background-image: linear-gradient(rgba(30, 0, 30, .9), rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(rgba(55, 97, 55, 0.6), rgba(27, 92, 36, 0.5));
+}
+
+.container {
+    background-image: linear-gradient(rgba(55, 97, 55, 0.6), rgba(27, 92, 36, 0.5));
 }
 
 .row {
@@ -64,7 +68,7 @@ div {
     height: 400px;
     width: 1450px;
     border: 1px solid black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("http://www.simpleimageresizer.com/_uploads/photos/2686a29e/wild-s2_1500x450.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("../img/trees.png");
     background-size: 100%;
     background-repeat: no-repeat;
     
@@ -97,9 +101,9 @@ div {
 
 .largeBox {
     width: 1000px;
-    border: 1px solid black;
+    border: .25px solid black;
     padding: 30px 30px 30px 30px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.unsplash.com/photo-1562427718-bc71583acd76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80");
+    background-image: linear-gradient(rgba(150, 141, 141, 0.3), rgba(192, 183, 183, 0.3)), url("https://images.unsplash.com/photo-1562427718-bc71583acd76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80");
     background-size: 100%;
 }
 
@@ -111,7 +115,7 @@ div {
 .smallBox {
     color: white;
     height: 200px;
-    border: 1px solid black;
+    border: .25px solid black;
     padding: 30px 30px 30px 30px;
     width:250px;
     
@@ -151,8 +155,16 @@ div {
 }
 
 .thumb {
-    margin: 40px 20px 20px 20px;
+    margin: 40px 20px 20px 90px;
+    border: solid black 1px;
+    padding-left: 200px;
+    margin-top: 30px;
 }
+
+/* .pic {
+    margin-top: 30px;
+    padding-top: 30px;
+} */
 .r {
     text-align: center;
     height: 70px;
@@ -171,7 +183,7 @@ div {
 }
 
 footer {
-    background: linear-gradient(rgba(101, 76, 117, 0.9), rgba(0, 0, 0, 0.2));
+    background: linear-gradient(rgba(47, 63, 49, 0.9), rgba(94, 105, 94, 0.2));
     font-family: 'Caladea';
     color: white;
     padding: 20px 20px 20px 20px;
@@ -194,21 +206,104 @@ footer {
 }
 
 .form-group {
-    display: inline-block;
+    color: white;
+    display: block;
+    /* border: solid black 1px; */
     padding: 30px 30px 30px 30px;
+    margin: 0px 30px 0px 30px;
 }
 
-.details {
-    text-align: right;
+.btn {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 140px;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 25px;
+}
+.e-title {
+    color: white;
+}
+
+.city-label {
+    display: block;
+    /* border: solid black 1px; */
+    padding-bottom: 10px;
+    color: white;
+}
+
+.city-search {
+    display: block;
+    border: none;
+    margin-bottom: 10px;
+
+}
+
+.r-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.r-search {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.r-btn {
+    margin-bottom: 200px;
+}
+
+
+
+
+.pswd {
+    margin: 0 auto;
+    padding-right: 50px;
 }
 
 a {
     text-decoration: none;
-    color: rgb(152, 81, 224);
+    color: rgb(75, 97, 75);
+    transition: 0.4s;
+}
+
+.menu-link {
+    color: white;
+    transition: .5s;
+}
+.menu-link:hover {
+    color: orange;
 }
 a:hover {
     color: rgb(255, 255, 255);
+    
   }
+.details {
+    text-align: right;
+    color: rgba(224, 124, 255, 0.973);
+    transition: .5s;
+    font-size: 19px;
+}
+.details:hover {
+    color: rgb(250, 172, 4);
+    /* opacity: .5; */
+}
+
+.click-for-details {
+    text-align: right;
+    color: rgba(224, 124, 255, 0.973);
+    transition: .5s;
+    font-size: 19px;
+    border-radius: 25px;
+}
+.click-for-details:hover {
+    color: rgb(250, 172, 4);
+    /* opacity: .5; */
+}
+.more {
+    background-color: none;
+}
 
 @media screen and (max-width: 1000px) {
     

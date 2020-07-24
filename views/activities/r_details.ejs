@@ -1,4 +1,4 @@
-<img calss="thumb" src="<%= restaurant.thumb %>">
+<img calss="thumb pic" src="<%= restaurant.thumb %>">
 <div class="r">
     <h1>
         <%= restaurant.name %>
@@ -15,14 +15,12 @@
     <h3>
         <%= restaurant.location.address %>
     </h3>
+    <a class="menu-link" href="<%= restaurant.menu_url %>">
+        See Menu Here!
+    </a>
 </div>
 
-<div class="r">
-    <h3>
-        <img src="<%= restaurant.photos[0].photo.url %>">
-        <img src="<%= restaurant.photos[1].photo.url %>">
-    </h3>
-</div>
+
 
 
 
