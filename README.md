@@ -1,3 +1,6 @@
+## Link:
+https://green-and-grow.herokuapp.com/
+
 # Green & Grow
 ### Description:
 This application was inpired by my mother who has spent much of her free time researching and learning about how to make her life more sustainable and less wasteful. She has shared how difficult it is to find ways to improve her lifestyle without a platform that can assist in her research. Green & Grow is meant to bring the vast world of sustainable living information to one space. Someone can go to the site to simply learn more about the vocabulary and common practices of living greener, or go further to discover educational talks and events through the eventful api built into the app. If someone finds an event that interests them, they can like and follow the event, which will be saved to their profile. They can also plan a day by choosing an event and then being directed to choose a restaurant nearby that adheres to organic practices, uses local ingredients, or is farm-to-table. There is a section for further reading with additional resources to help with tips and tricks for a greener life, suggestions of local organizations that need volunteers, and community gardens that are accepting new members.
